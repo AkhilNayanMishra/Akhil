@@ -1,0 +1,80 @@
+<html>
+   <body>
+    <h1>
+        registration PAGE
+        <form name="register" method="POST" action="x.php">
+            <table>
+                <tr>
+                    <tb><label for="fname"> first name</label></tb>
+                    <td><input placeholder="enter  the first name" type="text" name="fname" pattern="[A-Za-z]" required/></td>
+
+                </tr>
+                <tr>
+                   <td> last name</td>
+                   <td><input type="text" name="fname" required/></td>
+
+                </tr>
+                <tr>
+                    <td> contact </td>
+                    <td><input type="text " name="contact" required/></td>
+                </tr>
+                <tr>
+                    <td> password </td>
+                    <td><input type="text" name="pword" required/></td>
+
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>
+                        <select name="City" multiple>
+                            <option value="">--</option>
+                            <option value="knp">Kanpur</option>
+                            <option value="lck">Lucknow</option>
+                            <option value="bng"selected>Banglore</option>
+                            <option value="del">DElhi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+    
+                    <td colspan ="2" allign = "left" >
+                        <input type="submit" value="Submit"/>
+                    </td>
+                </tr>
+            </table>
+            <form name="numbers">
+                <input type="number" min= 1 max= 10 step= 1/>
+            </form>
+            <form name="range">
+                <input type="range" min= 1 max= 10 step= 1/>
+            </form>
+
+            <form name="test">
+                <input type="text" name="a"/>
+                <input type="text" name="b"/>
+                <input type="button" value="Click here"/>
+            </form>
+            <form name="x" oninput="res.value=parseInt(num1.value)+parseInt(num2.value);">
+            <label> Number 1</label>  <input type="range" name="num1" id="num1"
+                value="1" min="1" max="15" step="1"/>
+                <output id="res" for="num1">1</output>
+            </form>
+            <form name="x" method="GET" action="script.php">
+                <input type="text" name="fname" pattern="[A-Za-z]{5,10}"/>
+                <input type="submit" value="click here"/>
+            <label for num1 >Number 1</label>    <input type="text"  id="num1" value="20"/>+
+         <label for num2> Number 2</label>       <input type="text" id="num2"  value="20"/>=
+                <output id="res">40</output>         
+            </form>
+            <form name="x" method="GET" >
+                <input type="text" name="fname" pattern="[A-Za-z]{5,10}"/>
+                <input type="submit" value="click here"
+                formmethod="X.post"/>
+
+                    
+            </form>
+        </body>
+
+
+
+</html>
